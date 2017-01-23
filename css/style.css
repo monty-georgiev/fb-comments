@@ -1,0 +1,54 @@
+/*
+* Minimalistic reset
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+* Custom styles
+*/
+
+.main-wrapper {
+    max-width: 960px;
+    padding: 30px 60px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-header {
+    padding: 20px 0;
+}
+
+.input-form {
+    padding: 15px 0;
+}
+
+input,
+label {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input {
+    padding: 2px 0;
+}
+
+.btn-get-data {
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.download-link {
+    opacity: 0;
+}

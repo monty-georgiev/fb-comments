@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Post Reactions Grabber</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="main-header">
+            <h1>Facebook Post Comments to CSV</h1>
+        </header>
+        <div class="input-form">
+            <label for="access-token">Facebook access token:</label>
+            <input type="text" id="access-token">
+            <label for="page-id">Page id:</label>
+            <input type="text" id="page-id">
+            <label for="post-id">Post id:</label>
+            <input type="text" id="post-id">
+            <button id="get-data" class="btn-get-data">Get data</button>
+        </div>
+        <a href="#" id="download-link" class="download-link">Download CSV</a>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+
+</html>
