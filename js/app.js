@@ -1,5 +1,5 @@
  var result = [],
-     resultLimitPerPage = 300,
+     resultLimitPerPage = 600,
      $getDataButton = $('#get-data'),
      $downloadLink = $('#download-link'),
      accessTokenInput = $('#access-token'),
@@ -48,14 +48,14 @@
      var userId = '',
          userName = '',
          message = '',
-         resultString = 'data:text/csv;charset=utf-8,';
+         resultString = 'data:text/csv;charset=utf-8,id,name,message \n';
 
      $.each(data, function(key, answer) {
          userId = answer.from.id;
          userName = answer.from.name;
          message = answer.message;
 
-         resultString += userId + ',' + userName + ',' + message + '\n'
+         resultString += '"' + userId + '"' + ',"' + userName + '","' + message + '"\n'
      });
 
      createCSVFile(resultString);
